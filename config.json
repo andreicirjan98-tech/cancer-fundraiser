@@ -1,0 +1,29 @@
+{
+  "ong": {
+    "nume": "Asociația Dăruiește Viață",
+    "cui": "RO30563375",
+    "descriere": "Construim și modernizăm secții de oncologie în spitalele din România. Fondurile strânse susțin dotarea cu echipamente de ultimă generație, renovarea secțiilor de oncologie pediatrică și construirea primului spital integrat de oncologie pediatrică din România."
+  },
+  "cont_bancar": {
+    "banca": "ING Bank",
+    "iban": "RO08INGB0000999903175286",
+    "titular": "Asociația Dăruiește Viață"
+  },
+  "paypal": {
+    "activ": false,
+    "email": "",
+    "me_link": "https://www.daruiesteviata.ro/investeste"
+  },
+  "stripe": {
+    "activ": false,
+    "link": ""
+  },
+  "contact": {
+    "email": "contact@daruiesteviata.ro",
+    "website": "https://www.daruiesteviata.ro"
+  },
+  "analytics": {
+    "provider": "GoatCounter",
+    "setup": "Înlocuiește CODUL_TAU din index.html cu codul primit de la https://www.goatcounter.com"
+  }
+}
