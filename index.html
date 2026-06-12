@@ -100,8 +100,8 @@ body{font-family:'Inter',system-ui,-apple-system,sans-serif;background:#f8fafc;c
   <h1>Donează pentru <span>lupta împotriva cancerului</span></h1>
   <p>Asociația <strong>Dăruiește Viață</strong> construiește și modernizează secții de oncologie — atât pentru copii, cât și pentru adulți — în spitalele din România. Fiecare donație înseamnă echipamente mai bune, secții mai sigure și mai multe vieți salvate.</p>
   <div class="hero-buttons">
-    <a href="#doneaza" class="btn-primary">Donează acum</a>
-    <a href="#impact" class="btn-secondary">Vezi impactul</a>
+    <a href="#doneaza" class="btn-primary" data-goatcounter-click="click-doneaza-acum" data-goatcounter-title="Donează acum">Donează acum</a>
+    <a href="#impact" class="btn-secondary" data-goatcounter-click="click-vezi-impactul" data-goatcounter-title="Vezi impactul">Vezi impactul</a>
   </div>
 </section>
 
@@ -170,7 +170,7 @@ body{font-family:'Inter',system-ui,-apple-system,sans-serif;background:#f8fafc;c
         <span class="detail-label">IBAN</span>
         <span class="detail-value" id="iban">
           RO12BTRL1234567890123456
-          <button class="copy-btn" onclick="copyText('iban')">Copiază</button>
+          <button class="copy-btn" onclick="copyText('iban')" data-goatcounter-click="click-copiaza-iban">Copiază</button>
         </span>
       </div>
       <div class="detail-row">
@@ -188,7 +188,7 @@ body{font-family:'Inter',system-ui,-apple-system,sans-serif;background:#f8fafc;c
       <p style="color:#64748b;font-size:14px;margin-bottom:16px">
         Donează rapid cu cardul pe site-ul Dăruiește Viață (PayPal / Stripe).
       </p>
-      <a id="paypalBtn" href="#" target="_blank" class="btn-primary" style="display:inline-flex" onclick="goatcounter.count({event:true,path:'click-doneaza-online'})">
+      <a id="paypalBtn" href="#" target="_blank" class="btn-primary" style="display:inline-flex" data-goatcounter-click="click-doneaza-online" data-goatcounter-title="Donează online">
         Donează online
       </a>
     </div>
@@ -214,7 +214,7 @@ body{font-family:'Inter',system-ui,-apple-system,sans-serif;background:#f8fafc;c
           <div style="font-size:14px;color:#334155">Depui formularul la ANAF (online sau la ghișeu) <strong>până pe 25 mai</strong> a fiecărui an</div>
         </div>
       </div>
-      <a href="https://www.daruiesteviata.ro/redirectioneaza" target="_blank" class="btn-primary" style="display:inline-flex;font-size:15px;padding:12px 28px" onclick="goatcounter.count({event:true,path:'click-3procente'})">
+      <a href="https://www.daruiesteviata.ro/redirectioneaza" target="_blank" class="btn-primary" style="display:inline-flex;font-size:15px;padding:12px 28px" data-goatcounter-click="click-3procente" data-goatcounter-title="Redirecționează 3,5%">
         Vezi instrucțiuni complete
       </a>
     </div>
@@ -227,7 +227,7 @@ body{font-family:'Inter',system-ui,-apple-system,sans-serif;background:#f8fafc;c
         <strong>5%</strong> — costuri administrative și de strângere de fonduri
       </p>
       <p style="color:#64748b;font-size:13px;margin-top:16px">
-        👉 Vezi mai multe pe <a href="https://www.daruiesteviata.ro" target="_blank" style="color:#6366f1;font-weight:600" onclick="goatcounter.count({event:true,path:'click-site-ong'})">daruiesteviata.ro</a>
+        👉 Vezi mai multe pe <a href="https://www.daruiesteviata.ro" target="_blank" style="color:#6366f1;font-weight:600" data-goatcounter-click="click-site-ong" data-goatcounter-title="Site ONG">daruiesteviata.ro</a>
       </p>
     </div>
   </div>
@@ -283,7 +283,6 @@ document.getElementById('year').textContent = new Date().getFullYear();
 function copyText(id) {
   const el = document.getElementById(id);
   const text = el.childNodes[0].nodeValue.trim();
-  goatcounter.count({event:true,path:'click-copiaza-iban'});
   navigator.clipboard.writeText(text).then(() => {
     const toast = document.getElementById('toast');
     toast.textContent = 'IBAN copiat!';
